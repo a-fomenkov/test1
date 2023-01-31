@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap");
+@import "./reset.css";
+
+/*=============================== Фон темы ===============================*/
+
+:root {
+  --black-black: black;
+  --black: #171718;
+  --white: white;
+  --accent: #5c62ec;
+  --txt: #5c62ec;
+  --txt__dark: #5cece1;
+
+  /*=============================== Светлая тема ===============================*/
+
+  --page-bg: var(--white);
+  --text-color: var(--black);
+  --title-1: var(--accent);
+  --content-list__item-a: var(--txt);
+  --poject-card-bg: var(--black);
+  --poject-card-text: var(--white);
+  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.3);
+}
+
+/*=============================== Тёмная тема ===============================*/
+
+.dark {
+  --page-bg: #252526;
+  --text-color: var(--white);
+  --title-1: var(--white);
+  --content-list__item-a: var(--txt__dark);
+  --box-shadow: 0px 5px 35px rgba(0, 0, 0, 1);
+}
+
+html,
+body {
+  /* min-height: 100vh; */
+
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: -0.5px;
+
+  background-color: var(--page-bg);
+  color: var(--text-color);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*=============================== Общий контейнер ===============================*/
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
